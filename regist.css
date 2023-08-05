@@ -1,0 +1,773 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(33, 36, 48);
+    min-height: 100vh;
+}
+
+.box {
+    position: relative;
+    width: 380px;
+    height: 600px;
+    background: rgb(32, 32, 32);
+    border-radius: 10px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+/*    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }//    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }//    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }*/
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* .border{
+    position: absolute;
+    top:0;
+    inset: 0;
+}
+.border:before{
+    content: "";
+    position: absolute;
+    top:-50%;
+    left: -50%;
+    width:380px;
+    height:420px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+} */
+.box form {
+    position: absolute;
+    inset: 4px;
+    background: rgb(22, 22, 22);
+    padding: 50px 40px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+.box h1 {
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.box .inputbox {
+    position: relative;
+}
+
+    .box .inputbox input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+    }
+
+
+    .box .inputbox label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        letter-spacing: 1px;
+        padding: 10px 0;
+        font-size: 16px;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .box .inputbox input:focus ~ label,
+    .box .inputbox input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #03a9f4;
+        font-size: 12px;
+    }
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    background: #03a9f4;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(33, 36, 48);
+    min-height: 100vh;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: rgb(32, 32, 32);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }//    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }//    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }*/
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* .border{
+    position: absolute;
+    top:0;
+    inset: 0;
+}
+.border:before{
+    content: "";
+    position: absolute;
+    top:-50%;
+    left: -50%;
+    width:380px;
+    height:420px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+} */
+.box form {
+    position: absolute;
+    inset: 4px;
+    background: rgb(22, 22, 22);
+    padding: 50px 40px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+.box h1 {
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.box .inputbox {
+    position: relative;
+}
+
+    .box .inputbox input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+    }
+
+
+    .box .inputbox label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        letter-spacing: 1px;
+        padding: 10px 0;
+        font-size: 16px;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .box .inputbox input:focus ~ label,
+    .box .inputbox input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #03a9f4;
+        font-size: 12px;
+    }
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    background: #03a9f4;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(33, 36, 48);
+    min-height: 100vh;
+}
+
+.box {
+    position: relative;
+    width: 380px;
+    height: 600px;
+    background: rgb(32, 32, 32);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }//    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }//    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }*/
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* .border{
+    position: absolute;
+    top:0;
+    inset: 0;
+}
+.border:before{
+    content: "";
+    position: absolute;
+    top:-50%;
+    left: -50%;
+    width:380px;
+    height:420px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+} */
+.box form {
+    position: absolute;
+    inset: 4px;
+    background: rgb(22, 22, 22);
+    padding: 50px 40px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+.box h1 {
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.box .inputbox {
+    position: relative;
+}
+
+    .box .inputbox input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+    }
+
+
+    .box .inputbox label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        letter-spacing: 1px;
+        padding: 10px 0;
+        font-size: 16px;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .box .inputbox input:focus ~ label,
+    .box .inputbox input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #03a9f4;
+        font-size: 12px;
+    }
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    background: #03a9f4;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+* {
+    margin: 0 0 0 3px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(33, 36, 48);
+    min-height: 100vh;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: rgb(32, 32, 32);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }//    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }//    .box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+        animation-delay: -3s;
+    }
+
+    .box::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        animation: animate 6s linear infinite;
+        transform-origin: bottom right;
+    }*/
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* .border{
+    position: absolute;
+    top:0;
+    inset: 0;
+}
+.border:before{
+    content: "";
+    position: absolute;
+    top:-50%;
+    left: -50%;
+    width:380px;
+    height:420px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+} */
+.box form {
+    position: absolute;
+    inset: 4px;
+    background: rgb(22, 22, 22);
+    padding: 50px 40px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+.box h1 {
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.box .inputbox {
+    position: relative;
+}
+
+    .box .inputbox input {
+        width: 80%;
+        padding: 12px;
+        font-size: 16px;
+        color: white;
+        letter-spacing: 1px;
+        margin-bottom: 35px;
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+    }
+
+
+    .box .inputbox label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        letter-spacing: 1px;
+        padding: 10px 0;
+        font-size: 16px;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .box .inputbox input:focus ~ label,
+    .box .inputbox input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #03a9f4;
+        font-size: 12px;
+    }
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    background: rebeccapurple;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+}
